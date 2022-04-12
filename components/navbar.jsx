@@ -5,7 +5,7 @@ function navbar() {
     <div>
       <>
         <div className="bg-white drop-shadow-lg">
-          <div className="flex justify-between py-4 px-5">
+          <div className="flex justify-between py-3 px-5">
             <div className="flex justify-between gap-2 items-center">
               <FiShoppingBag />
               <p className="font-semibold text-sm"> Store </p>
