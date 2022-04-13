@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../components/footer";
 import Navbar from "../product_list/components/navbar";
 import ProductImage from "./components/productImage";
+import ProductReview from "./components/productReview";
 
 function Index() {
   return (
@@ -9,6 +10,7 @@ function Index() {
       <div className="bg-[#f3f3f3]">
         <Navbar />
         <ProductImage />
+        <ProductReview />
         <Footer />
       </div>
     </div>
