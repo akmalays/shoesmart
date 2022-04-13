@@ -7,28 +7,28 @@ function leftMenu() {
         <div className="pt-5 space-y-1">
           {" "}
           <p className="font-bold text-sm"> Product</p>
-          <p> All</p>
-          <p> Men</p>
-          <p> Women</p>
-          <p> Kids</p>
+          <p className="hover:underline cursor-pointer"> All</p>
+          <p className="hover:underline cursor-pointer"> Men</p>
+          <p className="hover:underline cursor-pointer"> Women</p>
+          <p className="hover:underline cursor-pointer"> Kids</p>
         </div>
         <div className="pt-5 space-y-1">
           <p className="font-bold text-sm"> Category</p>
-          <p> All</p>
-          <p> Boots</p>
-          <p> Flats</p>
-          <p> Heels</p>
-          <p> Loafers</p>
-          <p> Pantofels</p>
-          <p> Sandals</p>
-          <p> School Shoes</p>
-          <p className="font-bold"> More..</p>
+          <p className="hover:underline cursor-pointer"> All</p>
+          <p className="hover:underline cursor-pointer"> Boots</p>
+          <p className="hover:underline cursor-pointer"> Flats</p>
+          <p className="hover:underline cursor-pointer"> Heels</p>
+          <p className="hover:underline cursor-pointer"> Loafers</p>
+          <p className="hover:underline cursor-pointer"> Pantofels</p>
+          <p className="hover:underline cursor-pointer"> Sandals</p>
+          <p className="hover:underline cursor-pointer"> School Shoes</p>
+          <p className="font-bold cursor-pointer hover:text-red-800"> More..</p>
         </div>
         <div className="pt-5 space-y-1">
           <p className="font-bold text-sm"> Information</p>
-          <p> About Us</p>
-          <p> FAQ</p>
-          <p> Shipping</p>
+          <p className="hover:underline cursor-pointer"> About Us</p>
+          <p className="hover:underline cursor-pointer"> FAQ</p>
+          <p className="hover:underline cursor-pointer"> Shipping</p>
         </div>
       </div>
     </div>

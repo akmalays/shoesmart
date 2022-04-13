@@ -7,9 +7,12 @@ function productContent() {
   return (
     <div>
       <div className="flex gap-3 flex-wrap max-w-4xl">
-        <div className="bg-white rounded w-[165px] h-[220px]">
-          <div className="flex justify-end p-2 relative z-10 cursor-pointer ">
-            <AiFillHeart size={15} className="hover:text-red-800" />
+        <div className="bg-white rounded w-[165px] h-[220px] cursor-pointer">
+          <div className="flex justify-end p-2 relative z-10  ">
+            <AiFillHeart
+              size={15}
+              className="hover:text-red-800 cursor-pointer"
+            />
           </div>
           <div className="flex justify-end z-0 w-[85%] p-2">
             <Image src={imgShoe} />

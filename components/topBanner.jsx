@@ -7,8 +7,8 @@ function topBanner() {
   return (
     <div className="flex justify-end px-5 py-5">
       <div className="flex items-start gap-2 max-w-4xl">
-        <Image src={banner1} />
-        <Image src={banner2} />
+        <Image src={banner1} className="cursor-pointer" />
+        <Image src={banner2} className="cursor-pointer" />
       </div>
     </div>
   );
