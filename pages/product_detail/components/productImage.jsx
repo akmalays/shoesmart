@@ -28,10 +28,10 @@ function productImage() {
             </button>
           </div>
           <div className="flex gap-2 px-20 pt-2 pb-4 w-sm">
-            <div className="w-[80%] relative">
+            <div className="w-[65%] relative">
               <Image src={shoe1} alt="shoe1" />
             </div>
-            <div className="bg-white rounded-xl w-11/12 h-6/8">
+            <div className="bg-white rounded-xl w-96 h-6/8">
               <div className="px-4 py-4 text-left">
                 <p className="text-black font-normal text-[16px] leading-6">
                   {" "}
@@ -62,7 +62,7 @@ function productImage() {
             </div>
           </div>
         </div>
-        <div className="bg-white drop-shadow-lg z-100 rounded-xl font-bold text-lg max-w-xl ml-[-4%]">
+        <div className="bg-white drop-shadow-lg z-100 rounded-xl font-bold text-lg w-96 ml-[-4%]">
           <div className="px-7 py-2">
             <div className="py-2">
               <p className="font-bold text-lg pb-5"> Tony Perotty Boots</p>
