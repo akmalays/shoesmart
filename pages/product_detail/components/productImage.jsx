@@ -29,7 +29,7 @@ function productImage() {
           </div>
           <div className="flex gap-2 px-20 pt-2 pb-4 w-sm">
             <div className="w-[80%] relative">
-              <Image src={shoe1} />
+              <Image src={shoe1} alt="shoe1" />
             </div>
             <div className="bg-white rounded-xl w-11/12 h-6/8">
               <div className="px-4 py-4 text-left">
@@ -48,16 +48,16 @@ function productImage() {
           <div className="pr-20 pl-5 pb-12">
             <div className="flex gap-3">
               <div className="bg-white rounded ">
-                <Image src={shoe1} width={300} height={270} />
+                <Image src={shoe1} alt="shoe1" width={300} height={270} />
               </div>
               <div className="bg-white rounded ">
-                <Image src={shoe1} width={300} height={270} />
+                <Image src={shoe1} alt="shoe1" width={300} height={270} />
               </div>
               <div className="bg-white rounded ">
-                <Image src={shoe1} width={300} height={270} />
+                <Image src={shoe1} alt="shoe1" width={300} height={270} />
               </div>
               <div className="bg-white rounded ">
-                <Image src={shoe1} width={300} height={270} />
+                <Image src={shoe1} alt="shoe1" width={300} height={270} />
               </div>
             </div>
           </div>

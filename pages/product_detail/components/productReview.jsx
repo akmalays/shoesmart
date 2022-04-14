@@ -36,6 +36,7 @@ function ProductReview() {
                 width={80}
                 height={80}
                 className="rounded"
+                alt="profile1"
               />
               <div className="flex justify-center gap-1 text-yellow-600 py-1 ">
                 <AiFillStar size={10} />
