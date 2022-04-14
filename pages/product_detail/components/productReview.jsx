@@ -7,7 +7,7 @@ function ProductReview() {
   return (
     <div>
       <div className="flex mx-5 gap-5">
-        <div className="bg-white rounded-lg px-5 py-10">
+        <div className="bg-white rounded-lg px-5 py-7">
           <div className="flex-col justify-center items-center space-y-2">
             <p className="text-6xl font-bold text-black ">
               5.0<span className="text-[9px] text-gray-700">/5</span>
@@ -23,18 +23,18 @@ function ProductReview() {
           </div>
         </div>
         <div className="bg-white rounded-lg w-full">
-          <div className="flex justify-start px-5 py-4">
+          <div className="flex justify-start px-5 py-3">
             <p className="font-bold text-sm">
               {" "}
               What they think about this product?
             </p>
           </div>
-          <div className="flex justify-center items-center gap-5 px-12 py-2 ">
+          <div className="flex justify-center items-center gap-5 px-12  ">
             <div className="flex-col">
               <Image
                 src={profile1}
-                width={100}
-                height={100}
+                width={80}
+                height={80}
                 className="rounded"
               />
               <div className="flex justify-center gap-1 text-yellow-600 py-1 ">
