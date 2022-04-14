@@ -62,7 +62,7 @@ function productImage() {
             </div>
           </div>
         </div>
-        <div className="bg-white drop-shadow-lg z-100 rounded-xl font-bold text-lg w-96 ml-[-4%]">
+        <div className="bg-white drop-shadow-xl z-100 rounded-xl font-bold text-lg w-96 ml-[-4%]">
           <div className="px-7 py-2">
             <div className="py-2">
               <p className="font-bold text-lg pb-5"> Tony Perotty Boots</p>
