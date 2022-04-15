@@ -1,2 +1,2 @@
 link deployment :
-https://shoesmartweb.netlify.app/
+https://shoesmart.vercel.app
