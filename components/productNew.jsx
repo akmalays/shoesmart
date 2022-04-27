@@ -1,7 +1,6 @@
 import React from "react";
 import { AiFillHeart } from "react-icons/ai";
 import imgShoe from "../assets/pngwing.com.png";
-import Image from "next/image";
 
 function productContent() {
   return (
@@ -15,7 +14,7 @@ function productContent() {
             />
           </div>
           <div className="flex justify-end z-0 w-[85%] p-2">
-            <Image src={imgShoe} alt="img-shoe" />
+            <img src={imgShoe} alt="img-shoe" />
           </div>
           <div className="flex-col justify-start text-xs pl-5">
             <p> Tony Perroti Boots </p>
@@ -27,7 +26,7 @@ function productContent() {
             <AiFillHeart size={15} className="hover:text-red-800" />
           </div>
           <div className="flex justify-end z-0 w-[85%] p-2">
-            <Image src={imgShoe} alt="img-shoe" />
+            <img src={imgShoe} alt="img-shoe" />
           </div>
           <div className="flex-col justify-start text-xs pl-5">
             <p> Tony Perroti Boots </p>
@@ -39,7 +38,7 @@ function productContent() {
             <AiFillHeart size={15} className="hover:text-red-800" />
           </div>
           <div className="flex justify-end z-0 w-[85%] p-2">
-            <Image src={imgShoe} alt="img-shoe" />
+            <img src={imgShoe} alt="img-shoe" />
           </div>
           <div className="flex-col justify-start text-xs pl-5">
             <p> Tony Perroti Boots </p>
@@ -51,7 +50,7 @@ function productContent() {
             <AiFillHeart size={15} className="hover:text-red-800" />
           </div>
           <div className="flex justify-end z-0 w-[85%] p-2">
-            <Image src={imgShoe} alt="img-shoe" />
+            <img src={imgShoe} alt="img-shoe" />
           </div>
           <div className="flex-col justify-start text-xs pl-5">
             <p> Tony Perroti Boots </p>
@@ -63,7 +62,7 @@ function productContent() {
             <AiFillHeart size={15} className="hover:text-red-800" />
           </div>
           <div className="flex justify-end z-0 w-[85%] p-2">
-            <Image src={imgShoe} alt="img-shoe" />
+            <img src={imgShoe} alt="img-shoe" />
           </div>
           <div className="flex-col justify-start text-xs pl-5">
             <p> Tony Perroti Boots </p>
@@ -75,7 +74,7 @@ function productContent() {
             <AiFillHeart size={15} className="hover:text-red-800" />
           </div>
           <div className="flex justify-end z-0 w-[85%] p-2">
-            <Image src={imgShoe} alt="img-shoe" />
+            <img src={imgShoe} alt="img-shoe" />
           </div>
           <div className="flex-col justify-start text-xs pl-5">
             <p> Tony Perroti Boots </p>

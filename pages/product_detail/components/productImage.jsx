@@ -1,6 +1,6 @@
 import React from "react";
 import shoe1 from "../../../assets/pngwing.com.png";
-import Image from "next/image";
+import dataShoe from "../../../data/data.json";
 
 function productImage() {
   return (
@@ -29,18 +29,25 @@ function productImage() {
           </div>
           <div className="flex gap-2 px-20 pt-2 pb-4 w-sm">
             <div className="w-[65%] relative">
-              <Image src={shoe1} alt="shoe1" />
+              <img
+                src={dataShoe.image_url}
+                width={100}
+                height={100}
+                alt="shoe1"
+              />
             </div>
+
             <div className="bg-white rounded-xl w-96 h-6/8">
               <div className="px-4 py-4 text-left">
                 <p className="text-black font-normal text-[16px] leading-6">
                   {" "}
-                  Tony perroti Boots dengan design high class dan modern. Sangat
-                  nyaman untuk dipakai. terbuat dari genuine Leather (kulit Sapi
-                  Asli) yang berkualitas tinggi. Dibuat dengan handmade dan
-                  produksi di Indonesia. Terdapat zipper (resleting) di bagian
-                  upper. Upper dan Sole sangat kuat dan stabil. Design klasik
-                  ini menunjukkan sisi elegan dari produk.{" "}
+                  {dataShoe.description}Tony perroti Boots dengan design high
+                  class dan modern. Sangat nyaman untuk dipakai. terbuat dari
+                  genuine Leather (kulit Sapi Asli) yang berkualitas tinggi.
+                  Dibuat dengan handmade dan produksi di Indonesia. Terdapat
+                  zipper (resleting) di bagian upper. Upper dan Sole sangat kuat
+                  dan stabil. Design klasik ini menunjukkan sisi elegan dari
+                  produk.{" "}
                 </p>
               </div>
             </div>
@@ -48,16 +55,16 @@ function productImage() {
           <div className="pr-20 pl-5 pb-12">
             <div className="flex gap-3">
               <div className="bg-white rounded ">
-                <Image src={shoe1} alt="shoe1" width={300} height={270} />
+                <img src={shoe1} alt="shoe1" width={300} height={270} />
               </div>
               <div className="bg-white rounded ">
-                <Image src={shoe1} alt="shoe1" width={300} height={270} />
+                <img src={shoe1} alt="shoe1" width={300} height={270} />
               </div>
               <div className="bg-white rounded ">
-                <Image src={shoe1} alt="shoe1" width={300} height={270} />
+                <img src={shoe1} alt="shoe1" width={300} height={270} />
               </div>
               <div className="bg-white rounded ">
-                <Image src={shoe1} alt="shoe1" width={300} height={270} />
+                <img src={shoe1} alt="shoe1" width={300} height={270} />
               </div>
             </div>
           </div>
@@ -65,7 +72,10 @@ function productImage() {
         <div className="bg-white drop-shadow-xl z-100 rounded-xl font-bold text-lg w-96 ml-[-4%]">
           <div className="px-7 py-2">
             <div className="py-2">
-              <p className="font-bold text-lg pb-5"> Tony Perotty Boots</p>
+              <p className="font-bold text-lg pb-5">
+                {" "}
+                {dataShoe.name} Tony Perotty Boots
+              </p>
             </div>
             <div className="flex-col justify-start pb-5">
               <p className="text-base pb-2">Size</p>
