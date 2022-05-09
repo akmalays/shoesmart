@@ -6,6 +6,8 @@ import rootReducer from "../store/reducers";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.min.css";
 
 let composeEnhancers = compose;
 let store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));

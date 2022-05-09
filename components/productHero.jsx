@@ -3,23 +3,34 @@ import { AiFillHeart } from "react-icons/ai";
 import imgShoe from "../assets/pngwing.com.png";
 import dataShoe from "../data/data.json";
 import { useRouter } from "next/router";
+import { ToastContainer, toast } from "react-toastify";
 
 function productContent() {
   const router = useRouter();
   const [noOfElement, setnoOfElement] = useState(5);
+  const slice = dataShoe.slice(0, noOfElement);
   const loadMore = () => {
     setnoOfElement(noOfElement + noOfElement);
+    if ((slice = dataShoe.length - 1)) {
+      toast("max data reached!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
   };
-
-  const slice = dataShoe.slice(0, noOfElement);
 
   return (
     <div>
       <div className="flex justify-start gap-3 flex-wrap max-w-4xl">
-        {slice.map((el, i) => (
+        {slice.map((el) => (
           <div
             className="bg-white rounded w-[165px] h-[220px] cursor-pointer"
-            key={i}
+            key={el.id}
             onClick={() => {
               router.push(`/product_detail/${el.id}`);
             }}
@@ -49,6 +60,17 @@ function productContent() {
         >
           load more
         </button>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
       </div>
     </div>
   );
