@@ -1,18 +1,17 @@
-import axios from "axios";
-import data from "../../data/data.json";
-
-const baseData = "../../data/data.json";
+import { useState } from "react";
 
 export const getAllShoes = () => {
+  const [filter, setFilter] = useState("");
+
   return (dispatch) => {
-    axios
-      .get(baseData)
-      .then((response) => {
-        dispatch(setShoesData(response.data.data));
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    dataShoe.filter((item) => {
+      return Object.keys(item).some((key) =>
+        item[key]
+          .toString()
+          .toLowerCase()
+          .includes(filter.toString().toLowerCase())
+      );
+    });
   };
 };
 

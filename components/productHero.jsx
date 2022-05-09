@@ -6,12 +6,13 @@ import { useRouter } from "next/router";
 
 function productContent() {
   const router = useRouter();
-  const [noOfElement, setnoOfElement] = useState(4);
+  const [noOfElement, setnoOfElement] = useState(5);
   const loadMore = () => {
     setnoOfElement(noOfElement + noOfElement);
   };
 
   const slice = dataShoe.slice(0, noOfElement);
+
   return (
     <div>
       <div className="flex justify-start gap-3 flex-wrap max-w-4xl">
@@ -29,8 +30,8 @@ function productContent() {
                 className="hover:text-red-800 cursor-pointer"
               />
             </div>
-            <div className="flex justify-end z-0 w-[85%] p-2">
-              <img src={el.image_url} width={100} height={100} />
+            <div className="flex justify-center z-0  p-2">
+              <img src={el.image_url} height={95} width={124} alt="img-shoe" />
             </div>
             <div className="flex-col justify-start text-xs px-3">
               <p> {el.name} </p>
