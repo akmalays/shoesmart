@@ -5,7 +5,7 @@ import dataShoe from "../data/data.json";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
 
-function productContent() {
+function productContent(props) {
   const router = useRouter();
   const [noOfElement, setnoOfElement] = useState(5);
   const slice = dataShoe.slice(0, noOfElement);
